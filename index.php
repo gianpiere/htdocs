@@ -203,5 +203,4 @@ require_once BASEPATH.'core/CodeIgniter.php';
 
 /* End of file index.php */
 /* Location: ./index.php */
-
-/** Gianpiere Ramos Bernuy **/
+/* desde sublieme text */

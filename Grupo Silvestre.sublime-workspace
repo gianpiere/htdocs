@@ -164,10 +164,18 @@
 	"buffers":
 	[
 		{
-			"file": "/C/Git/doc/git/html/index.html",
+			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 70482,
+				"buffer_size": 6357,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Gianpiere/Documents/Sublime Text Build 3059 x64/Data/Packages/User/Git.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 1511,
 				"line_ending": "Windows"
 			}
 		}
@@ -175,16 +183,28 @@
 	"build_system": "Packages/User/mysqlexecutesis.sublime-build",
 	"command_palette":
 	{
-		"height": 288.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
 				"git",
-				"Git: Commit history"
+				"Git: Commit"
+			],
+			[
+				"push",
+				"Git: Push Tags"
+			],
+			[
+				"com",
+				"Git: Commit"
 			],
 			[
 				"insta",
 				"Package Control: Install Package"
+			],
+			[
+				"remoc",
+				"Package Control: Remove Package"
 			],
 			[
 				"instal",
@@ -267,7 +287,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 512.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -330,10 +350,15 @@
 	},
 	"file_history":
 	[
-		"/C/xampp/htdocs/.git/config",
-		"/C/xampp/htdocs/application/controllers/index.html",
+		"/C/xampp/htdocs/index.php",
+		"/C/Users/Gianpiere/Documents/Sublime Text Build 3059 x64/Data/Packages/User/Git.sublime-settings",
+		"/C/Users/Gianpiere/Documents/Sublime Text Build 3059 x64/Data/Packages/Git/Git.sublime-settings",
+		"/C/xampp/htdocs/application/controllers/Bienvenida.php",
 		"/C/xampp/htdocs/statics/img/icons/two26.svg",
 		"/C/xampp/htdocs/Grupo Silvestre.sublime-project",
+		"/C/Git/doc/git/html/index.html",
+		"/C/xampp/htdocs/.git/config",
+		"/C/xampp/htdocs/application/controllers/index.html",
 		"/C/Users/Gianpiere/.ssh/id_rsa",
 		"/C/xampp/htdocs/application/models/m_JefedeZona.php",
 		"/C/xampp/htdocs/application/views/template/theme/header.php",
@@ -343,9 +368,6 @@
 		"/C/xampp/htdocs/application/config/autoload.php",
 		"/C/xampp/htdocs/application/config/routes.php",
 		"/C/xampp/htdocs/application/config/config.php",
-		"/C/Users/Gianpiere/Documents/Sublime Text Build 3059 x64/Data/Packages/User/Git.sublime-settings",
-		"/C/Users/Gianpiere/Documents/Sublime Text Build 3059 x64/Data/Packages/Git/Git.sublime-settings",
-		"/C/xampp/htdocs/application/controllers/Bienvenida.php",
 		"/C/xampp/htdocs/application/controllers/LoginUserAccess.php",
 		"/C/Users/Gianpiere/Desktop/hola.pde",
 		"/D/Silvestre/htdocs/application/controllers/welcome.php",
@@ -455,9 +477,7 @@
 		"/C/Users/gianpiere.ramos/Desktop/STx64 GRB/Data/Packages/User/find_textCommand.py",
 		"/Z/statics/css/content_proyecciondezona.css",
 		"/C/Users/gianpiere.ramos/Desktop/STx64 GRB/sublime.py",
-		"/C/Users/gianpiere.ramos/Desktop/STx64 GRB/sublime_plugin.py",
-		"/Zstatics/css/content_proyecciondezona.css",
-		"/Zstaticsstatics/js/content_proyecciondezona.js"
+		"/C/Users/gianpiere.ramos/Desktop/STx64 GRB/sublime_plugin.py"
 	],
 	"find":
 	{
@@ -654,30 +674,60 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Git/doc/git/html/index.html",
+					"file": "index.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 70482,
+						"buffer_size": 6357,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1746,
-								1746
+								6250,
+								6250
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1365.0,
+						"translation.y": 2340.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Gianpiere/Documents/Sublime Text Build 3059 x64/Data/Packages/User/Git.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1511,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								361,
+								361
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1003,7 +1053,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 269.0,
+	"side_bar_width": 257.0,
 	"status_bar_visible": false,
 	"template_settings":
 	{
