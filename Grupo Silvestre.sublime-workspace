@@ -167,7 +167,7 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 6357,
+				"buffer_size": 6358,
 				"line_ending": "Unix"
 			}
 		},
@@ -175,7 +175,7 @@
 			"file": "/C/Users/Gianpiere/Documents/Sublime Text Build 3059 x64/Data/Packages/User/Git.sublime-settings",
 			"settings":
 			{
-				"buffer_size": 1511,
+				"buffer_size": 1453,
 				"line_ending": "Windows"
 			}
 		}
@@ -191,8 +191,36 @@
 				"Git: Commit"
 			],
 			[
+				"pu",
+				"Git: Push"
+			],
+			[
+				"pull",
+				"Git: Pull"
+			],
+			[
 				"push",
-				"Git: Push Tags"
+				"Git: Push"
+			],
+			[
+				"pus",
+				"Git: Push Current Branch"
+			],
+			[
+				"git br",
+				"Git: New Branch"
+			],
+			[
+				"comi",
+				"Git: Commit"
+			],
+			[
+				"git ",
+				"Git: Commit"
+			],
+			[
+				"git come",
+				"Set Syntax: Git Commit Message"
 			],
 			[
 				"com",
@@ -350,8 +378,8 @@
 	},
 	"file_history":
 	[
-		"/C/xampp/htdocs/index.php",
 		"/C/Users/Gianpiere/Documents/Sublime Text Build 3059 x64/Data/Packages/User/Git.sublime-settings",
+		"/C/xampp/htdocs/index.php",
 		"/C/Users/Gianpiere/Documents/Sublime Text Build 3059 x64/Data/Packages/Git/Git.sublime-settings",
 		"/C/xampp/htdocs/application/controllers/Bienvenida.php",
 		"/C/xampp/htdocs/statics/img/icons/two26.svg",
@@ -514,6 +542,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\\",
 			"allproyections",
 			"|",
 			"presentacion_p",
@@ -640,8 +669,7 @@
 			"containt_child_meses",
 			"ventasatipicas",
 			"Ventas Atipicas",
-			"nueva_proyeccion_form_init",
-			"proyecciondezona"
+			"nueva_proyeccion_form_init"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -678,24 +706,25 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6357,
+						"buffer_size": 6358,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6250,
-								6250
+								5788,
+								5788
 							]
 						],
 						"settings":
 						{
+							"live_git_annotations": false,
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2340.0,
+						"translation.y": 1993.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -707,15 +736,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1511,
+						"buffer_size": 1453,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								361,
-								361
+								405,
+								366
 							]
 						],
 						"settings":
@@ -772,6 +801,10 @@
 	{
 		"height": 0.0
 	},
+	"output.git":
+	{
+		"height": 88.0
+	},
 	"project": "Grupo Silvestre.sublime-project",
 	"replace":
 	{
@@ -783,6 +816,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"inde",
+				"index.php"
+			],
 			[
 				"routes",
 				"application\\config\\routes.php"
