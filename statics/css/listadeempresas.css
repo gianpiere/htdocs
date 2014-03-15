@@ -1,0 +1,65 @@
+.content_empresas_selected{
+	max-width: 100%;
+	width: 900px;
+	min-height: 40px;
+	padding: 0px 10px 10px 10px;
+	margin-top: 10px;
+}
+
+.logo{ margin-right: 40px; }
+
+.datos{ 
+	width: 100%; 
+	font-size: 20px;
+	font-weight: bold;
+	font-style: Arial;
+	color: green;
+}
+.datos div{
+	display: inline-block;
+	float: none;
+}
+#header{
+	overflow: auto;
+}
+
+.cargo{
+	font-size: 25px;
+	color: #AAA;
+}
+
+
+.cargo strong{
+	color: gray;
+}
+
+#header div{
+	float: left;
+}
+
+#cabecera{
+	background:#CEFCAA;
+	height: 25px;
+}
+
+.cerrarsession{
+	color: red;
+	padding: 7px;
+	font-size: 10px;
+	font-weight: bold;
+	float: right;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-right: 7px;
+}
+
+.title{
+	color: #A50;
+	font-size: 30px;
+}
+
+button{
+	padding: 20px;
+	height: 50px;
+	width: 200px;
+}

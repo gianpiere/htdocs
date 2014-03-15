@@ -1,0 +1,17 @@
+.content_detalletrimestral{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	display: block;
+	background: url(../img/pix_white_77.png);
+}
+
+.btnmes{
+	float: left;
+	padding: 3px 7px 3px 10px; 
+	margin:0px 7px 0px 0px;
+	border-left: 3px solid #444;
+	min-width: 70px;
+	position: relative;
+}
+

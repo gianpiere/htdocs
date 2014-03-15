@@ -1,0 +1,122 @@
+.content_listadodeProductosconFamiliayPresentacion{
+	position: absolute;
+	top: 0px; left: 0px;
+	right: 0px; bottom: 0px;
+	height: auto;
+	width: 100%;
+	z-index: 1;
+	background: url(../img/pix_white_77.png);
+}
+
+i.icn.close{
+	background: url(../img/close_red.png);
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	float: right;
+	margin: 3px 3px 3px 3px; 
+}
+
+
+/**** MSG Confirmacion de cierre ****/
+.msg_cerrarconfirm{
+	height: 150px;
+	width: 100%;
+	position: absolute;
+	top: 40%;
+	margin-top: -75px;
+	background: url(../img/pix_white_90.png);
+	z-index: 1;
+}
+
+.center_content_cc{
+	height: auto;
+	padding: 10px;
+	width: 330px;
+	margin: 0px auto 0px auto;
+}
+
+.center_content_cc h3{
+	color: #FF4940;
+	text-align: justify;
+}
+
+.center_content_cc p{
+	color: #CCD3E0;
+	text-align: justify;
+}
+
+.center_content_cc button{
+	background: #D95050;
+	padding: 5px 10px 5px 10px;
+	margin-right: 10px;
+	float: right;
+}
+
+
+/*** Lista de Elementos x Familia ***/
+
+dd.Producto{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	background: #F4CECE;
+}
+
+dd.Producto h3{
+	height: 30px;
+	background: #D95050;
+	padding: 2px 0 0 3px;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+dd.Producto dl{
+	background: none repeat scroll 0 0 #469FBE;
+    display: inline-block;
+    float: left;
+    height: 60px;
+    margin: 2px 5px 2px 2px;
+    padding: 2px 2px 2px 2px;
+    overflow: auto;
+    width: 224px;
+    cursor: pointer;
+}
+
+.seach_familiasyproductos{
+	height: auto;
+	overflow: auto;
+}
+
+.seach_familiasyproductos .inp_buscar{
+	width: 100%;
+	float: right;
+	height: 40px;
+	background: #40C8FF;
+}
+
+.seach_familiasyproductos .inp_buscar input{
+	height: 34px;
+	width: 350px;
+	border:0px;
+	padding: 3px 4px 3px 10px;
+	background: #73D7FF;
+	color: #FFF;
+}
+
+#presentacionesdelproducto{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 2;
+
+}
+
+
+
+
+
+
+

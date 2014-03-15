@@ -1,0 +1,78 @@
+/* css login */
+<?php header("Content-type: text/css; charset: UTF-8"); ?>
+html,body{min-height: 100%;height: 100%;}
+html{
+	background: url(http://10.10.1.8:8087/statics/img/bglogin.png) no-repeat top;
+	background-size: 100% auto;
+}
+
+.content{ height: 100%; width: 100%; max-width: 940px;margin: 0 auto; position: relative;}
+
+.formulario_logeo{
+	position: relative;
+	right: 0px;
+	top: 0px;
+	display: block;
+}
+
+.formulario_logeo form div[input="email"] input,
+.formulario_logeo form div[input="password"] input{
+	background: #ddffcc;
+	padding: 5px 15px 5px 15px;
+	margin: 2px;
+	font-size: 16px;
+	height: 25px;
+	width: 250px;
+	outline: none;
+	border: 1px solid #d4ffbe;
+}
+
+.formulario_logeo form div[input="iniciar"] button{
+	float: right;
+	outline: none;
+	padding: 7px 20px 7px 20px;
+	font-size: 16px;
+	color: #FFF;
+	background: #c43b38;
+	border: 0px;
+	margin: 2px;
+	cursor: pointer;
+	right: 0px;
+	top: 0px;
+}
+
+.formulario_logeo form div[input="iniciar"] button:hover{
+	background: #c6403d;
+}
+
+.formulario_logeo form div[input="iniciar"] button:focus{
+	background: #e65b57;
+}
+
+.formulario_logeo form div[input="iniciar"] a{
+	margin: 20px 0px 0px 0px;
+	display: inline-block;
+	color: #e65b57;
+	text-decoration: none;
+}
+
+.blqlf{
+	float: right;
+}
+
+.graficadeaplicacion{
+	float: left;
+}
+
+
+/*.content{
+	background: url(<?=IMG;?>felp.png) no-repeat;
+	background-size: 300px auto;
+	background-position: center 55%;
+}
+
+body{
+	background:url(<?=IMG;?>fllgs.png) no-repeat;
+	background-position: 10px 50px;
+	background-size: 256px auto;
+}*/

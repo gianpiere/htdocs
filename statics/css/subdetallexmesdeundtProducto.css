@@ -1,0 +1,80 @@
+/*** sub fancy detalle de productos proyectados ***/
+.subdetalleprowrap{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	display: block;
+	background: url(../img/pix_white_90.png) repeat;
+	z-index: 2;
+}
+
+.centercontent_wrapsbdtpro{
+	min-height: 300px;
+	min-width : 225px;
+	background: #125539;
+	margin:0 auto;
+}
+
+
+/*** ***/
+.centercontent_wrapsbdtpro .cabeceradatos{
+	height: 34px;
+	width: 100%;
+	display: block;
+	text-align: right;
+}
+
+.lf{
+	float: left; 
+	color: #FFFFFF; 
+	text-align: right; 
+	text-transform: uppercase; 
+	font-size: 18px; 
+	overflow: auto;
+	min-width: 162px; 
+	padding: 8px 15px 8px 5px;
+	background: #15593c;
+	margin: 2px 3px 2px 2px;
+}
+
+.wpxp{
+	text-align: left;
+}
+
+.wvendidos{
+	text-align: inherit;
+}
+
+.wganancia{
+	text-align: inherit;
+}
+
+.wproyectado{
+	text-align: inherit;
+}
+
+.wgananciafinal{
+	text-align: inherit;
+}
+
+.datos_cabecerarl{
+	display: block;
+	overflow: auto;
+	height: auto;
+	width: 100%;
+}
+
+.superheader{
+	height: 25px;
+	display: block;
+	width: 100%;
+	overflow: auto;
+}
+i.icn.cerrar{ /* icono de cerrar ventana. */
+	background: url(../img/close_red.png) no-repeat center center;
+	height: 24px;
+	width: 24px;
+	display: block;
+	float: right;
+	cursor: pointer;
+}

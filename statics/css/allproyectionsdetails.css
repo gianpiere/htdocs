@@ -1,0 +1,202 @@
+a{
+	text-decoration: none;
+}
+.content_detailsproyections{
+	margin: 0 auto;
+	max-width: 940px;
+	width: 100%;
+	display: block;
+}
+
+.content_detailsproyections .headerfix{
+	overflow: hidden;
+	height: 68px;
+	width: 100%;
+	margin: 0px 0px 10px 0px;
+	/*background: url(http://10.10.1.8:8087/archivosprueba/detalleheader.png) #c4ffcf;*/
+	background: #C4FFCF;
+}
+
+.flef{float: left;}
+
+.flef.datosproy{
+	overflow: hidden;
+	width: 475px;
+	height: 68px;
+}
+
+.flef.cashinf{
+	width: 350px;
+	height: 48px;
+	padding-top: 20px;
+	font-size: 40px;
+	color: #C10000;
+	font-family: Arial;
+}
+
+.flef.fechyear{
+	width: 105px;
+	height: 40px;
+	color: #E94B45;
+	font-size: 35px;
+	text-align: right;
+
+}
+
+.maxbartitle{
+	font-size: 23px;
+	color: #F32124;
+	padding: 5px 5px 5px 10px;
+	font-family: Arial;
+}
+
+.allmaxbar{
+	background: #FE7676;
+	height: 27px;
+	width: 450px;
+	margin-left: 10px;
+}
+
+.barprogress{
+	background: #D71F23;
+	height: 27px;
+	min-width: 10px;
+	width: 10px;
+}
+
+.porcent{
+	padding-top: 3px;
+	margin-right: 3px;
+	position: relative;
+	display: block;
+	color: #FFF;
+}
+
+.estatus_datos{
+	height: 28px;
+}
+.estatus_datos button{
+	padding: 4px;
+	background: gold;
+	color: #FFF;
+	border: 0px;
+	cursor: pointer;
+	float: right;
+}
+
+
+.content_detailsproyections .packagelistzonasproyectadas{
+	
+}
+
+.content_detailsproyections .packagelistzonasproyectadas .zonaslist{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	display: block;
+	list-style: none;
+	overflow: auto;
+}
+
+.content_detailsproyections .packagelistzonasproyectadas .zonaslist li.zona{
+	width: 288px;
+	height: 70px;
+	background: #13B1A2;
+	margin: 0px 23px 15px 0px;
+	cursor:pointer;
+	float: left;
+	border-left: 10px solid #13B1A2;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+	position: relative;
+}
+
+.content_detailsproyections .packagelistzonasproyectadas .zonaslist li.zona:hover{
+	border-left: 10px solid #015951;
+}
+
+.content_detailsproyections .packagelistzonasproyectadas .zonaslist li.zona:nth-child(3n){
+	margin: 0px 0px 15px 0px;
+}
+
+.content_detailsproyections .packagelistzonasproyectadas .zonaslist li.zona span.zonaname{
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	text-align: left;
+	color: #FFF;
+
+}
+
+.content_detailsproyections .packagelistzonasproyectadas .zonaslist li.zona h2{
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	text-align: right;
+	padding-right: 3px;
+	color: #FFF;
+}
+
+
+.opciones_resul{
+	float: right;
+	min-width: 150px;
+	width: auto;
+	height: 200px;
+	background: white;
+	position: absolute;
+	right: 30px;
+	top: 68px;
+	padding: 5px 5px 5px 5px;
+	margin: 0px 0px 0px 0px;
+	list-style: none;
+	display: none;
+}
+
+
+
+
+
+
+
+.opciones_resul{
+	
+}
+
+
+
+/****** stylos para las proyecciones por producto ******/
+.orProductoProyections{
+	max-width:940px;
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	color: #FE7676;
+	margin: 0 auto;
+}
+
+.productsstadisticproyections{
+	max-width: 940px;
+	width: 100%;
+	height: 50px;
+	margin: 0 auto; 
+}
+.productsstadisticproyections button{
+	min-height: 50px;
+	height: 100%;
+	max-width: 240px;
+	width: 100%; 
+	background: #C4FFCF;
+	margin: 0 auto;
+	border: 0px;
+	cursor: pointer;
+}
+
+.productsstadisticproyections button:hover{
+	background: #13B1A2;
+}
+
+
+.footerpresentacion .vendidos{
+	float: right;
+	margin-left: 15px;
+}

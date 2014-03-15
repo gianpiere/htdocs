@@ -1,0 +1,153 @@
+/* allproyections.css */
+a{text-decoration: none;}
+section.ProyeccionesGenerales{
+	max-width: 940px;
+	widows: 100%;
+	min-height: 260px;
+}
+
+section.ProyeccionesGenerales #content{
+
+}
+
+section.ProyeccionesGenerales #content div.headerfx{
+	height: 50px;
+	margin: 10px 0px 10px 0px;
+	overflow: auto;
+	display: block;
+}
+
+section.ProyeccionesGenerales #content div.headerfx button{
+	height: 34px;
+	float: right;
+	background: #fd6d6d;
+	padding: 5px 10px 5px 10px;
+	color: #FFF;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+section.ProyeccionesGenerales #content div.Proyeccioneslist{
+	position: relative;
+}
+
+section.ProyeccionesGenerales #content div.Proyeccioneslist #lista{
+	overflow: auto;
+	width: 100%;
+	display: block;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+section.ProyeccionesGenerales #content div.Proyeccioneslist #lista .proyeccion{
+	/*padding: 0px 0px 0px 0px;
+	margin: 0px 20px 15px 0px;*/
+	float: left;
+	height: 154px;
+	width: 460px;
+	background: #067bab;
+	cursor: pointer;
+}
+section.ProyeccionesGenerales #content div.Proyeccioneslist #lista .proyeccion:nth-child(2n){
+	/*margin: 0px 0px 0px 0px;*/
+}
+
+
+
+.cabecera{
+	height: 50px;
+	overflow: auto;
+	width: 100%;
+	display: block;
+}
+
+.cabecera i[icn="mecha"].icn{
+	width: 32px;
+	height: 50px;
+	display: inline-block;
+	float: right;
+}
+
+.cabecera p{
+	float: left;
+	color: #FFF;
+	font-size: 15px;
+	margin: 12px 0px 0px 5px;
+}
+
+.cabecera h2{
+	float: right;
+	font-size: 40px;
+	color: #FFF;
+	margin: 0px 5px 0px 0px;
+	font-family: fantasy;
+
+}
+
+.filameses{
+	height: 20px;
+	width: 100%;
+	overflow: auto;
+	display: block;
+	position: relative;
+}
+
+.filameses ul{
+	width: 444px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	list-style: none;
+	float: right;
+	overflow: auto;
+	display: block;
+	height: 20px;
+}
+
+.filameses ul li{
+	float: left;
+	background: #52C8F9;
+	height: 20px;
+	width: 37px;
+	color: #FFF;
+	font-size: 13px;
+	text-align: center;
+}
+
+.filameses ul li:nth-child(2n){
+	background: #6ED4FD;
+}
+
+.montoactualdezona{
+	margin-right: 10px;
+	height: 20px;
+	margin-top: 5px;
+	color: #0977A4;
+	display: block;
+	text-align: right;
+}
+
+.montoanualdezona{
+	bottom: 0px;
+	right: 0px;
+	color: #FFF;
+	display: block;
+	font-size: 25px;
+	margin-right: 10px;
+	margin-top: 27px;
+	text-align: right;
+}
+
+
+
+a.linkcombo{
+	float: left;
+	overflow: auto;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 20px 15px 0px;
+	height: 154px;
+	width: 460px;
+}
+
+a.linkcombo:nth-child(2n){
+	margin: 0px 0px 15px 0px;
+}

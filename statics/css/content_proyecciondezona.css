@@ -1,0 +1,450 @@
+/* content_proyecciondezona.js */
+.content_proyecciondezona{
+	margin: 0 auto;
+	max-width: 940px;
+	width: 100%;
+	min-height: 270px;
+}
+
+.content_proyecciondezona .head{
+	height: 50px;
+	background: #13B1A2;
+	width: 100%;
+}
+
+.nombrezona{
+	color: #FFF;
+	font-size: 25px;
+	text-transform: uppercase;
+	text-align: left;
+	margin-left: 5px;
+	width: 460px;
+	float: left;
+	padding: 10px 0px 0px 0px;
+}
+
+.dinero{
+	width: 180px;
+	height: 40px;
+	float: left;
+	font-size: 25px;
+	margin-left: 5px;
+	margin-top: 10px;
+	color: #FFF;
+}
+
+ul,li{
+	list-style: none;
+}
+
+.top_area{
+	height: 77px;
+	width: 467px;
+}
+
+.bottom_area{
+	max-width: 460px;
+	width: 100%;
+	padding: 7px 0px 0px 7px;
+	display: block;
+	overflow: auto;
+}
+
+.bottom_area button{
+	height: 29px;
+	width: 70px;
+	float: left;
+	margin: 0px 6px 6px 0px;
+	border: 0px;
+	background: #096B99;
+	color: #FFF;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.ladoiz{
+	float: left;
+	overflow: auto;
+}
+
+.ladodr{
+	float: right;
+	overflow: auto;
+	max-width: 460px;
+	width: 100%;
+}
+
+.ladodr .fl{
+	height: 40px;
+	color: #FFF;
+	font-size: 22px;
+}
+
+.ladodr .fl h3{
+	text-align: left;
+	float: left;
+}
+
+.ladodr .fl h4{
+	text-align: right;
+	float: right;
+	margin-right: 10px;
+}
+
+.barratotal{
+	height: 30px;
+	max-width: 450px;
+	width: 100%;
+	background: #FF343E;
+}
+
+.barra_progress{
+	background: #B0070F;
+	height: 30px;
+	max-width: 450px;
+}
+
+.barra_progress #porcente{
+	text-align: right;
+	font-size: 15px;
+	margin-top: 6px;
+	margin-right: 5px;
+	float: right;
+}
+
+.bottom_area button:nth-child(6n){
+	margin: 0px 0px 6px 0px;
+}
+
+
+.aprobado{
+	height: 50px;
+	float: right;
+	width: 287px;
+}
+
+.aprobado span{
+	padding: 5px;
+	display: block;
+	color: #FFF;
+}
+.aprobado span strong{
+	display: block;
+	text-align: right;
+	margin-right: 10px;
+}
+
+
+/* seccion datos estadisticos */
+.seccion_datos_estadisticos{
+	margin: 10px 0px 0px 0px;
+	height: 154px;
+	background:#62CBFC;
+}
+
+.peticion_pendienteaprobacion button{
+	float: right;
+	height: 30px;
+	width: 150px;
+	color: #FFF;
+	border: 0px;
+	margin: 10px 10px 0px 0px; 
+	cursor: pointer;
+	background: #a2041e;
+}
+
+button[selectedmes=""]{
+	background: #CCC;
+}
+
+.detalledemesselected{
+	/*height: 35px;*/
+	background: #709946;
+	position: relative;
+	overflow: auto;
+	display: block;
+	margin-top: 15px;
+	width: 100%;
+	max-width: 940px;
+	padding-bottom: 2px;
+}
+
+.detalles_messelected{
+	float: right;
+	height: 29px;
+	margin-top: 3px;
+	margin-right: 3px;
+	border: 0px;
+	padding:  0px 10px 0px 10px;
+	cursor: pointer;
+	background: #004943;
+	position: relative;
+}
+
+.detalledemesselected span{
+	margin: 10px 0px 0px 0px;
+}
+
+.presentacion span{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px; 
+}
+
+.btn_cancelap{
+	color: #008B7C;
+	float: left;
+	font-size: 13px;
+	margin-top: 3px;
+	text-align: left;
+	cursor: pointer;
+}
+
+.detalles{
+	overflow: auto;
+	display: block;
+	position: relative;
+	height: auto;
+}
+
+.detalles h3{
+	padding: 7px;
+	text-align: center;
+}
+
+.detalles ul li{
+	display: block;
+	margin: 0px 10px 5px 10px;
+	background:url('') #066E60;
+	cursor: pointer;
+	height: 70px;
+}
+
+.lsita_productos_presentaciones{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	height: 40px;
+}
+
+.producto_lst li strong{
+	padding-left: 10px;
+	color: #001D09;
+}
+
+.producto_lst li ul.lsita_productos_presentaciones{
+	overflow: auto;
+	color: #FFF;
+	font-size: 12px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 750px;
+}
+
+.producto_lst .producto_x{
+	
+}
+
+.producto_lst li ul.lsita_productos_presentaciones li.presentacion{
+	float: left;
+	width: 70px;
+	height: 35px;
+	margin: 0px 0px 0px 10px;
+	padding: 0px 0px 0px 0px;
+	font-size: 15px;
+}
+
+.producto_lst li ul.lsita_productos_presentaciones li.presentacion label{
+	display: block;
+}
+
+.producto_lst li ul.lsita_productos_presentaciones li.presentacion span{
+	display: block;
+}
+
+.producto_lst{
+	max-height: 450px;
+	overflow: auto;
+}
+
+.montomensual{
+	float: right;
+	padding-bottom: 10px; 
+	padding-right: 2px;
+}
+
+.detallexmes{
+	max-width: 940px;
+	width: 100%;
+}
+
+.detallexmes ul{
+	overflow: auto;
+	display: block;
+	position: relative;
+}
+
+.detallexmes ul li{
+
+}
+
+
+/*
+|
+|	Estilos para el Contenedor de Meses con su respectivo Chas y porcentaje de venta
+|
+*/
+
+ul.content_meses_cash{
+	overflow: auto;
+	height: auto;
+	width: 100%;
+	list-style: none;
+}
+
+ul.content_meses_cash li.mes{
+	height: 42px;
+	width: 145px;
+	background: gold;
+	padding: 4px;
+	float: left;
+	margin:0px 3px 6px 0px;
+	list-style: none;
+	cursor: pointer;
+}
+
+ul.content_meses_cash li.mes:nth-child(4),ul.content_meses_cash li.mes:nth-child(10){
+	margin:0px 3px 6px 7px;
+}
+
+ul.content_meses_cash li.mes:nth-child(6n){
+	margin:0px 0px 6px 0px;
+}
+
+ul.content_meses_cash li.mes strong{
+	position: relative;
+	display: block;
+	text-align: center;
+}
+
+ul.content_meses_cash li.mes b{
+	float: right;
+}
+
+
+
+.notific{
+	width: 440px;
+	float: left;
+	height: 300px;
+}
+.map{
+	float:left;
+}
+
+.search_detalle{
+	height: 35px;
+	width: 100%;
+	background: #008EED;
+}
+
+.busqueda{
+	float: right;
+	height: 35px;
+	width: 50%;
+}
+
+.busqueda .buscar{
+	height: 35px;
+	width: 350px;
+	border: 0px;
+	padding: 0px 5px 0px 7px;
+	margin:0px 0px 0px 0px;
+	float: right;
+	background: #009AD9;
+}
+
+.busqueda button.btn_icn{
+	height: 35px;
+	width: 35px;
+	display: block;
+	padding: 0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;float: right;
+	border: 0px;
+	background: url(../img/lupa_white_green.png) 50% 50% #009AD9;
+}
+
+.lupa{
+	background: url(<?=IMG;?>lupa_white_green.png) center center #B22E2E;
+}
+
+ol.head{
+	color: #FFF;
+}
+
+li.mesr dd{
+	height: 10px;
+}
+
+.content_meses_cash .mesr pre{
+	float: left;
+}
+
+.content_meses_cash .mesr sup{
+	float: right;
+	display: inline;
+	position: relative;
+	color: #EB4744;
+}
+
+.content_meses_cash .mesr strong{
+	color: #2B99C2;
+}
+
+.tachar{
+	position:absolute; 
+	background:url(../img/xantes.png) no-repeat; 
+	width:100%
+}
+
+ul.content_meses_cash li.mesr{
+	background: none repeat scroll 0 0 #FFD700;
+    cursor: pointer;
+    float: left;
+    height: 42px;
+    list-style: none outside none;
+    margin: 0 3px 6px 0;
+    padding: 4px;
+    width: 145px;
+}
+
+.controlesdeCambioReproyecciones{
+	height: 25px;
+	background: #A9D8DE;
+	position: relative;
+}
+
+.OpcionesTrimestrales{
+	background: url(../img/pix_white_77.png);
+	position: absolute;
+	height: 138px;
+	bottom: 0;
+	overflow: auto;
+	display: inline-block;
+	width: 100%;
+}
+
+.reprogramarcnt button{
+	margin-top: 1px;
+	margin-right: 1px;
+	float: right;
+	height: 22px;
+	border: none;
+	cursor: pointer;
+	background: #1D9CDB;
+	color: #FFFFFF;
+}
+
+.ButonsProyecciones{
+	height: 112px;
+}
+
+

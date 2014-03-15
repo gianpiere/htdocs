@@ -1,0 +1,152 @@
+/* listadodezonas.css */
+
+ul[zonaslistado=""]{
+	max-width: 940px;
+	width: 100%;
+	overflow: auto;
+}
+
+ul[zonaslistado=""] li[zona=""]{
+	height: 37px;
+	width: 232px;
+	margin: 4px 4px 0px 0px;
+	padding: 7px 0px 4px 0px;
+	background-color: #017B6C;
+	float: left;
+	text-align: center;
+	font-size: 18px;
+	color: #FFF;
+	font-style: Arial;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+ul[zonaslistado=""] li[zona=""]:nth-child(4n){
+	margin: 4px 0px 0px 0px;
+}
+
+ul[zonaslistado=""] li[zona=""] span{
+	font-size: 10px;
+	display: block;
+	color: yellow;
+}
+
+ul[zonaslistado=""] li[estrellas="3"]{
+	background-image: url('tresestrellas.png');
+}
+
+ul[zonaslistado=""] li[estrellas="2"]{
+	background-image: url('dosestrellas.png');
+}
+
+ul[zonaslistado=""] li[estrellas="1"]{
+	background-image: url('unaestrellas.png');
+}
+
+ul[zonaslistado=""] li[estrellas="0"]{
+	background-image: url('ceroestrellas.png');
+}
+
+.listadodezonas h2{
+	color: #9BC277;
+}
+
+.volver{
+	background: none repeat scroll 0 0 #F13636;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 0 2px 0 0;
+    padding: 1px 11px;
+}
+
+.selected_zone{
+	/*background: none repeat scroll 0 0 #D9F3D1;*/
+    float: right;
+    font-size: 17px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
+
+.selected_zone span{
+	text-transform: lowercase;
+	color: red;
+	cursor: pointer;
+	float: right;
+	padding: 5px;
+	margin-left: 7px;
+	font-size: 13px;
+}
+
+
+
+
+/* Agregar Productos */
+ul[agregarproductos=""]{
+	max-width: 940px;
+	width: 100%;
+	overflow: auto;
+}
+
+
+ul[agregarproductos=""] li[producto=""]{
+	height: 37px;
+	width: 232px;
+	margin: 4px 4px 0px 0px;
+	padding: 7px 0px 4px 0px;
+	background-color: #709949;
+	float: left;
+	text-align: center;
+	font-size: 18px;
+	color: #FFF;
+	font-style: Arial;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+ul[agregarproductos=""] li[agregar=""] span{
+	color: yellow;
+	cursor: pointer;
+}
+
+ul[agregarproductos=""] li[producto=""]:nth-child(4n){
+	margin: 4px 0px 0px 0px;
+}
+
+ul[agregarproductos=""] li[producto=""] span{
+	color: #FFFFFF;
+    float: left;
+    font-size: 13px;
+    margin: 0 0 0 3px;
+}
+
+ul[agregarproductos=""] li[producto=""] pre{
+	font-size:10px; 
+	float:left; 
+	margin:0px 0px 0px 3px;
+}
+
+ul[agregarproductos=""] li[producto=""] i[icn=""]{
+	background-color: #CCCCCC;
+    display: inline-block;
+    float: left;
+    height: 40px;
+    margin: -3px 0 0 4px;
+    width: 40px;
+}
+
+
+
+/*
+	<ul zonaslistado>
+		<li data-id="" zona estrellas="3">zona Lima <span>juancho jefecito de zona</span></li>
+		<li zona></li>
+		<li zona></li>
+		<li zona></li>
+		<li zona></li>
+		<li zona></li>
+		<li zona></li>
+		<li zona></li>
+		<li zona></li>
+	</ul>
+*/

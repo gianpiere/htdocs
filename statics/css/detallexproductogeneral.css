@@ -1,0 +1,189 @@
+/* detallexproductogeneral */
+.wraperproductslist{
+	background: none repeat scroll 0 0 #FFFFFF;
+    left: -470px;
+    margin: 0 50%;
+    max-width: 940px;
+    min-height: 500px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    width: 100%;
+    background: #59C699;
+}
+
+.controls{}
+
+.controls .icn.close{
+	background: url(../img/close_red.png);
+	height: 24px;
+	width: 24px;
+	overflow: auto;
+	float: right;
+	margin: 4px;
+	cursor: pointer;
+}
+
+.listaprd{
+
+}
+
+.productodtglp{
+	width: 231px;
+	height: auto;
+	min-height: 81px;
+	background: #59c699;
+	padding: 2px;
+	float: left;
+	list-style: none;
+	display: inline-block;
+}
+.productodtglp:hover{
+	background: #2ec285;
+}
+
+.productodtglp:hover .listamesess li:hover{
+	background: #71cca6;
+}
+
+.productodtglp:hover .listamesess li:hover .detalle span{
+	color: #125539;
+}
+
+.productodtglp:hover .listamesess li:hover .detalle button:hover{
+	color: #ca2e2e;
+}
+
+.productodtglp .name{
+	text-transform: uppercase;
+	font-size: 22px;
+	color: #FFFFFF;
+	text-align: center; 
+}
+
+.productodtglp .estadistics{
+	height: 32px;
+	width: 100%;
+	background: #125539;
+	position: relative;
+}
+
+.productodtglp .estadistics .objetivo{
+	float: right;
+	color: #FFFFFF;
+	font-size: 20px;
+	margin: 4px 4px 0px 0px;
+	position: absolute;
+	right: 4px;
+}
+
+.ventaspro{
+	margin-bottom: 2px;
+	height: auto;
+	overflow: auto;
+}
+
+.productodtglp .estadistics .progress{
+	height: 32px;
+	background: #6ff9c0;
+	position: absolute;
+	font-size: 18px;
+}
+
+.productodtglp .estadistics .progress span.vendidosprc{
+	padding: 4px 0px 0px 4px;
+	color: #FFFFFF;
+}
+
+.ventaobje{
+	float: right;
+	color: #FFFFFF;
+	font-size: 24px;
+	height: 24px;
+}
+
+.ventareal{
+	float: left;
+	color: #FFFFFF;
+	font-size: 20px;
+	height: 24px;
+}
+
+.listamesess{
+	overflow: auto;
+	width: 100%;
+	color: #FFFFFF;
+	padding: 5px 0px 1px 0px;
+	margin-top: 2px;
+	border-top: 1px dashed #CCC;
+
+}
+
+#fancydatosxproducto{
+	width: 100%;
+	margin:  0 auto;
+	overflow: auto;
+}
+ 
+.listamesess li .detalle button{
+	border: 0px;
+	background: #59C699;
+	color: white;
+	cursor: pointer;
+	float: right;
+}
+
+.cashdata{
+	display: block;
+	overflow: auto;
+	height: auto;
+	width: 100%;
+}
+
+.cashdata .actualcash{
+	float: left;
+	font-size: 22px;
+	margin-top: 3px;
+	font-size: 28px;
+}
+
+.cashdata .metacash{
+	float: right;
+	font-size: 24px;
+}
+
+/**** search ****/
+.seach{
+	height: 70px;
+	background: #FFFFFF;
+}
+
+.familiadelista{
+	height: 40px;
+	display: block;
+	width: 100%;
+	background: gold;
+	float: left;
+	font-size: 35px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.seach input{
+	height: 30px;
+	width: 250px;
+	border: 0px;
+	background: #6FF9C0;
+	padding: 2px;
+	font-size:18px;
+}
+
+.icn.lupa{
+	cursor: pointer;
+	display: inline-block;
+    height: 30px;
+    width: 32px;
+	background: url(../img/lupa_white_green.png);
+	margin-bottom: -7px;
+}
+

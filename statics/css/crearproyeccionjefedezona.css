@@ -1,0 +1,43 @@
+.menudeubicaciones{
+	display: block;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.menudeubicaciones nav{
+	overflow: auto;
+	height: auto;
+	width: auto;
+	padding: 2px 0px 2px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+.menudeubicaciones nav .navegacionlist{
+	display: block;
+	overflow: auto;
+}
+
+.menudeubicaciones nav .navegacionlist li{
+	float: left;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 5px 0px 5px;
+	min-height: 24px;
+	background: #FF4636;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+
+.menudeubicaciones nav .navegacionlist ol{
+	background: url(../img/menuflech.png) no-repeat ;
+	height: 24px;
+	float: left;
+	display: inline-block;
+	width: 11px;
+}
+.menudeubicaciones nav .navegacionlist i{
+	background: url(../img/menuflechout.png) no-repeat ;
+	height: 24px;
+	float: left;
+	display: inline-block;
+	width: 11px;	
+}

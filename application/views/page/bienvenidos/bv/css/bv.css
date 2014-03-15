@@ -1,0 +1,77 @@
+.access{
+	overflow: auto;
+	display: block;
+	background: url(http://localhost/statics/img/fondo/backgroundpixbody.png);
+}
+
+.bannerTop{
+	max-height: 230px;
+	height: auto;
+	width: 100%;
+	max-width: 960px;
+	overflow: auto;
+	margin: 0 auto;
+	background: silver;
+}
+
+.optionfocushome{min-height: 340px;}
+
+.socialplugins{
+	background: gray;
+}
+
+.galeria{
+	width: 435px;
+	max-width: calc((100% / 2) - 9.375%); /* 435 - 90 - 435 == 960 */
+	background: green;
+	height: 450px;
+}
+
+.multimedia{
+	width: 600px;
+	max-width: calc(((100% / 2) + 9.375%) - 20px);
+	background: green;
+	height: 450px;
+}
+
+.menuhome{height: 35px;padding-top: 5px; display: inline-block;}
+.menuhome a{display: inline-block;}.menuhome a:hover{background: gold;}
+
+.copyright{
+	display: block;
+	width: 100%;
+}
+
+footer #sectionfooter{
+	padding-top: 2px;
+}
+
+.logohome{
+	width: auto;
+}
+
+.contentfotogaleria{
+	width: 100%;
+	max-width: 100%;
+	background: gray;
+	height: 50%;
+	display: block;
+}
+
+.contentfotogaleria img{
+	max-height: 100%;
+}
+
+.circlebutton{
+	background: orange;
+	padding: 10px;
+}
+
+.negative10top{
+	margin-top: -25px;
+	position: absolute;
+}
+
+.circlebutton.negative10top.reducemidle{
+	margin-left:-25px;
+}

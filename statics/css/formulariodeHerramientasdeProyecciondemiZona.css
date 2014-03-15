@@ -1,0 +1,282 @@
+.menu_herramientasdeproyeccion{
+	height: 70px;
+	background: #CCC;
+	width: 100%;
+	display: block;
+	overflow: auto;
+}
+
+
+
+input#buscar {
+    color: #FFFFFF;
+}
+.busqueda .buscar {
+    background: none repeat scroll 0 0 #009AD9;
+    border: 0 none;
+    float: right;
+    height: 35px;
+    margin: 0;
+    padding: 0 5px 0 7px;
+    width: 350px;
+}
+
+.busqueda button.btn_icn {
+    background: url("../img/lupa_white_green.png") repeat scroll 50% 50% #009AD9;
+    border: 0 none;
+    display: block;
+    float: right;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    width: 35px;
+}
+.lupa {
+    background: url("../img/lupa_white_green.png") repeat scroll center center #B22E2E;
+}
+
+.busqueda {
+    float: right;
+    height: 35px;
+    width: 50%;
+}
+
+.search_detalle {
+    background: none repeat scroll 0 0 #008EED;
+    /*height: 35px;*/
+    height: 74px;
+    width: 100%;
+}
+
+.menu_herramientasdeproyeccion ul li button.addPresentacion{
+	float: right;
+    margin: 4px 5px 0 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+
+/***** contenedor new/edit : producto presentacion.;  *****/
+
+.content_editandnew_presentaciondeproductoinList{
+    position: absolute;
+    overflow: auto;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: url(../img/pix_white_77.png);
+    z-index:1;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.content_formulario_newpresentacion{
+    min-height: 350px;
+    height: auto;
+    padding: 5px 0px 5px 0px;
+    width: 100%;
+    background: #9BFFCD;
+    border-top: 4px solid #71FDB7;
+    border-bottom: 4px solid #71FDB7;
+}
+
+.content_formulario_newpresentacion .form_center{
+    background: #B8FDDB;
+    height: 347px;
+    width: 877px;
+    margin:0 auto;
+}
+
+.section_search{
+    
+}
+
+.section_search .inpbuscar{
+    width: 426px;
+    height: 42px;
+    background: #C8FEE3;
+    float: right;
+    position: relative;
+}
+
+.section_search .inpbuscar input.search{
+    height: 42px;
+    max-width: 100%;
+    padding: 0px 5px 0px 5px;
+    width: 385px;
+    background: #C8FEE3;
+}
+
+i.icn.lupa{
+    height: 32px;
+    width: 32px;
+    background: url(../img/lupa_white_green.png);
+    display: inline-block;
+    float: right;
+    position: absolute;
+    margin: 3px 3px 3px 3px;
+    right: 5px;
+}
+.content_producto_controls{
+    height: 290px;
+    width: 900px;
+    background: #9BFFCD;
+    margin: 4px auto 0px auto;
+    display: block;
+}
+
+.content_producto_controls .detalle{
+    width: 447px;
+    height: 290px;
+    background: #B8FDDB;
+    float: left;
+    margin-right: 4px;
+    display: block;
+}
+
+.content_producto_controls .lista{
+    float: left;
+    background: #B8FDDB;
+    height: 290px;
+    width: 427px;
+    display: block;
+}
+
+.nombre_delproducto_detalle{
+    height: 35px;
+    color: #F80B09;
+    font-size: 22px;
+    display: block;
+    overflow: auto;
+}
+
+.cantidad_content_producto{
+    height: 92px;
+    display: block;
+    color: #7DCBE9;
+    font-size: 20px;
+}
+
+.cantidad_content_producto input.cantidad{
+    background: #C8FEE3;
+    border: 1px solid #9CFFCE;
+    height: 36px;
+    width: 239px;
+    padding: 0px 4px 0px 2px; 
+    text-align: right;
+}
+
+.precio_aprox{
+    border-bottom: 1px dashed #4EA6F3;
+    color: #1AA55F;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.costo_aprox{
+    height: 48px;
+    font-size: 20px;
+    color: #57ADF1;
+    padding-top: 5px;
+}
+.costo_aprox span{
+    color: #57ADF1;
+    font-size: 23px;
+}
+
+.titulo_delproducto_detalle{
+    color: #F8615F;
+    font-size: 24px;
+    height: 35px;
+    text-align: center;
+
+}
+
+.btn_aceptar{
+    height: 40px;
+    padding-top: 5px;
+    display: block;
+    font-size: 18px;
+}
+
+#btn_cancelar{
+    height: 30px;
+    width: 80px;
+    cursor: pointer;
+    background: #B8FDDB;
+    color: #ff4848;
+    float: right;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+#btn_aceptar{
+    height: 30px;
+    width: 180px;
+    cursor: pointer;
+    background: #ff4848;
+    color: #FFFFFF;
+    float: right;
+}
+
+#btn_deletePr{
+    height: 30px;
+    min-width: 80px;
+    margin-right: 90px;
+    cursor: pointer;
+    background: #B8FDDB;
+    color: #d1d1d1;
+    float: right;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.result_search{
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.result_search ol.family{
+    height: 35px;
+    background: #FC5959;
+    color: #F9FCB8;
+    font-size: 20px;
+    height: 32px;
+    padding: 5px 0 0 7px;
+    display: block;
+}
+
+.result_search ol.name{
+    background: #9BFFEB;
+    color: #419AF4;
+    border-bottom: 2px solid #59FC96;
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.result_search li{
+    float: left;
+    height: 40px;
+    width: 130px;
+    background: #F2FB8E;
+    color: #1F8C62;
+    margin-left: 18px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+.result_search li.presentacion:nth-child(3n){
+    margin-left: 0px;
+}
+
+
+
+

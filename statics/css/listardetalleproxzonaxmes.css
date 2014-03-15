@@ -1,0 +1,100 @@
+/*
+GerenteCorporativo.php
+/Z/application/controllers/GerenteCorporativo.php
+*/
+
+.detalle_mes_container {
+	width: 100%;
+	margin: 0 auto;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	z-index: 1;
+	background: #FFF;
+	max-width: 940px;
+
+}
+
+.content_cerrar{
+	height: 30px;
+}
+
+.content_cerrar i.close{
+	height: 20px;
+	width: 20px;
+	float: right;
+	display: inline-block;
+	background: url(../img/close_red.png) center no-repeat;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.detalle_datos{
+	height: 35px;
+	background: #DFFFDA;
+}
+
+.productodefamilia{
+	background: #FFE6E6;
+	height: auto;
+	min-height: 30px;
+	padding: 4px;
+	text-align: left;
+	color: #850606;
+}
+
+
+.listadodefamiliasyproductos {
+	display: block;
+	overflow: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
+	max-height: 500px; 
+	height: auto;
+	width: 100%;
+}
+
+.buscador {
+ 	height: 35px;
+}
+
+.listadodefamiliasyproductos ol.familianameblock {
+	height: 25px;
+	padding: 7px;
+	text-align: center;
+	font-size: 18px;
+	color: #AC040A;
+	background: #D95050;
+}
+
+.familiasListado {
+	width: 100%;
+}
+
+.titlesearch{
+	padding-top: 5px;
+	margin-left: 7px;
+	color: #73C9EB;
+	display: inline-block;
+}
+
+input#buscar{color: #FFF;}
+
+
+li.productodefamilia{
+	margin : 3px 0px 3px 0px;
+	border-top: 2px dashed #666;
+}
+
+.productodefamilia div span.prodname{
+	text-transform: uppercase;
+	color: #389FC4;
+}
+
+.productodefamilia div b.codigo{
+	float: right;
+	margin:5px; 
+	position: relative;
+}
