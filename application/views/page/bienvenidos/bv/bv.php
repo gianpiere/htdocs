@@ -1,3 +1,8 @@
+<div class="inicialheader">
+	<div class="content socialplugins">
+		hola q tal
+	</div>
+</div>
 <section id="wrap">
 	<div class="rasgadoL"></div>
 	<div class="responsive allcontent">
