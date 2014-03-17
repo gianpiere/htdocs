@@ -61,6 +61,7 @@ $route['Home'] = 'Bienvenida/inicio';
 * @date 	: 
 * @todo 	: Pagina Principal de aterrisaje de un usuario.
 **************************************************************************/
+
 $route['static'] = 'Maskara/anonymousurl';
 $route['static/(:any)'] = 'Maskara/anonymousurl/$1';
 

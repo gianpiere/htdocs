@@ -18,6 +18,8 @@
 
 .socialplugins{
 	background: gray;
+	height: 24px;
+	width: 100%;
 }
 
 .galeria{
@@ -48,6 +50,8 @@ footer #sectionfooter{
 
 .logohome{
 	width: auto;
+	display: inline-block;
+	overflow: auto;
 }
 
 .contentfotogaleria{
@@ -74,4 +78,42 @@ footer #sectionfooter{
 
 .circlebutton.negative10top.reducemidle{
 	margin-left:-25px;
+}
+
+.devocional{
+	height: 60px;
+	background: #ffe168;
+	color: #c59f13;
+	display: inline-block;
+	overflow: auto;
+}
+
+.useraccess{
+	float: right;
+	width: 90px;
+	height: 23px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: right;
+	background: gold;
+	border-right: 5px green;
+}
+
+/* laterales rasgados */
+.rasgadoL{
+	float: left;
+	width: 20px;
+	background: url(http://localhost/statics/img/fondo/roto_l.png);
+	height: 1500px;
+}
+
+.rasgadoR{
+	float: left;
+	width: 20px;
+	background: url(http://localhost/statics/img/fondo/roto_r.png);
+	height: 1500px;
+}
+
+.allcontent{
+	background: #FFFFFF;
 }

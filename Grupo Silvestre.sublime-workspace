@@ -8,8 +8,20 @@
 				"margin-left"
 			],
 			[
+				"borde",
+				"border-style"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
 				"tex",
-				"text-transform"
+				"text-decoration"
 			],
 			[
 				"bac",
@@ -26,10 +38,6 @@
 			[
 				"fade",
 				"fadeOut"
-			],
-			[
-				"text",
-				"texto"
 			],
 			[
 				"fon",
@@ -58,10 +66,6 @@
 			[
 				"wi",
 				"width"
-			],
-			[
-				"bord",
-				"border-left"
 			],
 			[
 				"Gerente",
@@ -172,10 +176,90 @@
 			}
 		},
 		{
+			"file": "application/views/page/bienvenidos/bv/bv.php",
+			"settings":
+			{
+				"buffer_size": 1126,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/config/routes.php",
+			"settings":
+			{
+				"buffer_size": 2412,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/template/theme/template.php",
+			"settings":
+			{
+				"buffer_size": 393,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/template/theme/footer.php",
+			"settings":
+			{
+				"buffer_size": 201,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/template/theme/header.php",
+			"settings":
+			{
+				"buffer_size": 1354,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/config/autoload.php",
+			"settings":
+			{
+				"buffer_size": 3139,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/config/config.php",
+			"settings":
+			{
+				"buffer_size": 13043,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/language/es/spanish_lang.php",
+			"settings":
+			{
+				"buffer_size": 44,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "/C/Users/Gianpiere/Documents/Sublime Text Build 3059 x64/Data/Packages/User/Git.sublime-settings",
 			"settings":
 			{
 				"buffer_size": 1453,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/page/bienvenidos/bv/css/bv.css",
+			"settings":
+			{
+				"buffer_size": 1838,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "statics/css/Thematica.css",
+			"settings":
+			{
+				"buffer_size": 1550,
 				"line_ending": "Windows"
 			}
 		}
@@ -183,12 +267,12 @@
 	"build_system": "Packages/User/mysqlexecutesis.sublime-build",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 371.0,
 		"selected_items":
 		[
 			[
 				"git",
-				"Git: Commit"
+				"Git: Gui"
 			],
 			[
 				"pu",
@@ -315,7 +399,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 400.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -378,10 +462,22 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/system/helpers/text_helper.php",
+		"/C/xampp/htdocs/application/views/template/theme/template.php",
+		"/C/xampp/htdocs/application/views/template/theme/header.php",
+		"/C/xampp/htdocs/application/views/template/theme/footer.php",
+		"/C/xampp/htdocs/statics/js/herramientascreaciondeproyeccion.js",
+		"/C/xampp/htdocs/application/config/hooks.php",
+		"/C/xampp/htdocs/statics/css/Thematica.css",
+		"/C/xampp/htdocs/application/controllers/Bienvenida.php",
+		"/C/xampp/htdocs/statics/css_lib/bootstrap/bootstrap-select.css",
+		"/C/xampp/htdocs/system/database/drivers/odbc/odbc_driver.php",
+		"/C/xampp/htdocs/system/database/drivers/odbc/odbc_utility.php",
+		"/C/xampp/htdocs/application/config/foreign_chars.php",
+		"/C/xampp/htdocs/system/libraries/Ftp.php",
 		"/C/Users/Gianpiere/Documents/Sublime Text Build 3059 x64/Data/Packages/User/Git.sublime-settings",
 		"/C/xampp/htdocs/index.php",
 		"/C/Users/Gianpiere/Documents/Sublime Text Build 3059 x64/Data/Packages/Git/Git.sublime-settings",
-		"/C/xampp/htdocs/application/controllers/Bienvenida.php",
 		"/C/xampp/htdocs/statics/img/icons/two26.svg",
 		"/C/xampp/htdocs/Grupo Silvestre.sublime-project",
 		"/C/Git/doc/git/html/index.html",
@@ -389,10 +485,8 @@
 		"/C/xampp/htdocs/application/controllers/index.html",
 		"/C/Users/Gianpiere/.ssh/id_rsa",
 		"/C/xampp/htdocs/application/models/m_JefedeZona.php",
-		"/C/xampp/htdocs/application/views/template/theme/header.php",
 		"/C/xampp/htdocs/application/core/MY_Controller.php",
 		"/C/xampp/htdocs/application/views/page/bienvenidos/bv/bv.php",
-		"/C/xampp/htdocs/application/views/template/theme/template.php",
 		"/C/xampp/htdocs/application/config/autoload.php",
 		"/C/xampp/htdocs/application/config/routes.php",
 		"/C/xampp/htdocs/application/config/config.php",
@@ -495,17 +589,7 @@
 		"/C/Users/gianpiere.ramos/Desktop/STx64 GRB/Data/Packages/User/OpenBrowserCommand.py",
 		"/Z/application/views/page/jefedezona/detalledeproyecciondezona.php",
 		"/Z/statics/js/crearproyeccionjefedezona.js",
-		"/Z/application/views/page/jefedezona/listardetalleproxzonaxmes.php",
-		"/Z/statics/js/listardetalleproxzonaxmes.js",
-		"/C/Users/gianpiere.ramos/Desktop/MarkdownPreview.sublime-settings",
-		"/C/Users/gianpiere.ramos/Desktop/dialog.py",
-		"/C/Users/gianpiere.ramos/Desktop/STx64 GRB/Data/Installed Packages/Markdown Preview.sublime-package",
-		"/C/Users/gianpiere.ramos/Desktop/STx64 GRB/Data/Packages/Default/Default (Windows).sublime-keymap",
-		"/C/Users/gianpiere.ramos/Desktop/STx64 GRB/Data/Packages/User/prompt_goto_lineCommand.py",
-		"/C/Users/gianpiere.ramos/Desktop/STx64 GRB/Data/Packages/User/find_textCommand.py",
-		"/Z/statics/css/content_proyecciondezona.css",
-		"/C/Users/gianpiere.ramos/Desktop/STx64 GRB/sublime.py",
-		"/C/Users/gianpiere.ramos/Desktop/STx64 GRB/sublime_plugin.py"
+		"/Z/application/views/page/jefedezona/listardetalleproxzonaxmes.php"
 	],
 	"find":
 	{
@@ -697,7 +781,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -713,25 +797,252 @@
 						"selection":
 						[
 							[
-								5788,
-								5788
+								5736,
+								5736
 							]
 						],
 						"settings":
 						{
-							"live_git_annotations": false,
+							"live_git_annotations": true,
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1993.0,
+						"translation.y": 628.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "application/views/page/bienvenidos/bv/bv.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								915,
+								915
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 273.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/config/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2412,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2238,
+								2238
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 585.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/views/template/theme/template.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 393,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								157,
+								157
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "application/views/template/theme/footer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 201,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								201,
+								201
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 39.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "application/views/template/theme/header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1354,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1338,
+								1338
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 39.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "application/config/autoload.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3139,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1961,
+								1961
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 663.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "application/config/config.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13043,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2270,
+								2270
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 741.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "application/language/es/spanish_lang.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 44,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11,
+								7
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
 					"file": "/C/Users/Gianpiere/Documents/Sublime Text Build 3059 x64/Data/Packages/User/Git.sublime-settings",
 					"semi_transient": false,
 					"settings":
@@ -754,6 +1065,70 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 10,
+					"file": "application/views/page/bienvenidos/bv/css/bv.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1838,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1813,
+								1813
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 1209.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "statics/css/Thematica.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1550,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								708,
+								708
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 688.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -779,6 +1154,12 @@
 				0,
 				1,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
 			]
 		],
 		"cols":
@@ -789,6 +1170,7 @@
 		"rows":
 		[
 			0.0,
+			0.493820803296,
 			1.0
 		]
 	},
@@ -817,12 +1199,24 @@
 		"selected_items":
 		[
 			[
-				"inde",
-				"index.php"
+				"footer",
+				"application\\views\\template\\theme\\footer.php"
+			],
+			[
+				"them",
+				"statics\\css\\Thematica.css"
+			],
+			[
+				"header",
+				"application\\views\\template\\theme\\header.php"
 			],
 			[
 				"routes",
 				"application\\config\\routes.php"
+			],
+			[
+				"inde",
+				"index.php"
 			],
 			[
 				"database",
@@ -1025,10 +1419,6 @@
 				"application\\controllers\\Pruebas.php"
 			],
 			[
-				"header",
-				"application\\views\\template\\fancy\\header.php"
-			],
-			[
 				"all",
 				"statics\\js\\allproyections.js"
 			],
@@ -1090,7 +1480,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 257.0,
+	"side_bar_width": 308.0,
 	"status_bar_visible": false,
 	"template_settings":
 	{

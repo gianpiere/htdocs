@@ -3,15 +3,13 @@ button{border: none;background-color: transparent; background: inherit; font-siz
 button[link="small"]{padding: 5px; margin: 1px auto 1px auto;} button[link="small"]{background-color: gold; color: white; font-size: 15px;}
 button[link="long"]{padding: 10px;} button[link="long"]{color: white; font-size: 17px;}
 
-
 /***********/
 
 html,body{ min-height: 100%; }
 
-
 /* Fondos Basicos de la WEB */
 
-html{ background: url(../img/fondo/fondo.png); }
+html{ background: url(../img/fondo/bg.png); }
 body{ /*background: white;*/ }
 #body{ background: orange; }
 #wrap{ background: transparent; }
@@ -40,6 +38,14 @@ body{ /*background: white;*/ }
 	height: 20px;
 }
 
+.allcontent{
+	max-width: 960px;
+	overflow: auto;
+	display: inline-block;
+	margin: 0 auto;
+	float: left;
+}
+
 section.content{
 	max-width: 960px;
 	height: 100%;
@@ -49,7 +55,7 @@ section.content{
 /* Diseño basico de la web */
 
 #wrap{
-	max-width: 960px;
+	max-width: 1000px;
 	margin: 0px auto 0px auto;
 	overflow: auto;
 }
