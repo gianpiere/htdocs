@@ -44,8 +44,24 @@
 	height: 450px;
 }
 
-.menuhome{height: 35px;padding-top: 5px; display: inline-block;}
-.menuhome a{display: inline-block;}.menuhome a:hover{background: gold;}
+.menuhome{height: 40px; float: right; width: 724px; display: inline-block; background: url(http://localhost/statics/img/fondo/menuhome.png) repeat-x; }
+.menuhome a{
+	text-decoration: none; 
+	color: white; 
+	height: 20px; 
+	min-width: 20px; 
+	padding: 8px 10px 10px 10px;
+	float: left;
+	border-bottom: 4px solid white;
+}
+
+.menuhome a:not(.lnkfocus):hover{background: #afdd90;}
+.menuhome a.lnkfocus{
+	background: #83ba51;
+	border-bottom: 4px solid orange;
+}
+.menuhome a.lnkfocus:focus{background: #83ba51;}
+
 
 .copyright{
 	display: block;
@@ -90,21 +106,42 @@ footer #sectionfooter{
 
 .devocional{
 	height: 60px;
+	display: block;
+	overflow: auto;
+	width: 742px;
+}
+
+.msg_dev{
+	overflow: auto;
+	display: block;
+}
+
+.msg_dev .cunha{
+	width: 18px;
+	height: 40px;
+	background: url(http://localhost/statics/img/icons/cunha.png) no-repeat;
+	display: inline-block;
+	float: left;
+}
+
+.msg_dev .mensaje{
 	background: #ffe168;
 	color: #c59f13;
 	display: inline-block;
-	overflow: auto;
+	width: 716px;
+	height: 34px;
+	padding: 2px 4px 4px 4px;
 }
 
 .useraccess{
 	float: right;
-	width: 90px;
+	width: 80px;
 	height: 23px;
 	text-transform: uppercase;
 	text-decoration: none;
-	text-align: right;
+	text-align: center;
 	background: gold;
-	border-right: 5px green;
+	border-right: 5px solid green;
 }
 
 /* laterales rasgados */
@@ -124,4 +161,18 @@ footer #sectionfooter{
 
 .allcontent{
 	background: #FFFFFF;
+}
+
+.lnkfacebook{
+	background: url(http://localhost/statics/img/icons/facebook_metro.png) no-repeat;
+	width: 70px;
+	height: 26px;
+	margin-left: 0px;
+}
+
+.rutabiblica{
+	float: right;
+	color: violet;
+	display: block;
+	text-align: right;
 }

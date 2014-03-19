@@ -1,6 +1,6 @@
 <div class="inicialheader">
 	<div class="content socialplugins">
-		hola q tal
+		<a href="#"><button class="lnkfacebook"></button></a>
 	</div>
 </div>
 <section id="wrap">
@@ -20,10 +20,20 @@
 			</div>
 			<!-- aqui el devocional y el menu -->
 			<div class="devocional left">
-				ejemplo
+				<div class="msg_dev">
+					<div class="cunha"></div>
+					<div class="mensaje">ejemplo</div>
+				</div>
+				<div class="rutabiblica" align="right"><span>14:01,02</span></div>
 			</div>
 			<nav class="menuhome">
-
+				<a class="lnkfocus" href="#1">Home</a>
+				<a href="#1">Nosotros</a>
+				<a href="#1">Actividades</a>
+				<a href="#1">Cursos</a>
+				<a href="#1">Fotos</a>
+				<a href="#1">Contactenos</a>
+				<a href="#1">Mas</a>
 			</nav>
 		</section>
 		
