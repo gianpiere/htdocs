@@ -89,4 +89,16 @@ button[icn=""] span.description{ font-size: 20px; }
 	background: orange;
 }
 
-.colorfocuspanel{background: #fff5e7;}
+.colorfocuspanel{background: #FFFFFF;}
+
+.separacion_1{
+	margin: 4px 0px 4px 0px;
+	display: block;
+	height: 10px;
+	background: red;
+}
+
+.sliderpanel{
+	max-width: 100%;
+	background: silver;
+}

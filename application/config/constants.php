@@ -44,6 +44,8 @@ define('CSS_LIB', BASE_PATH.'statics/css_lib/');
 define('JS', BASE_PATH.'statics/js/');
 define('JS_LIB', BASE_PATH.'statics/js_lib/');
 define('IMG', BASE_PATH.'statics/img/');
+define('GALERIA', BASE_PATH.'statics/galerias/');
+define('SLIDER', BASE_PATH.'statics/galerias/slider/');
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

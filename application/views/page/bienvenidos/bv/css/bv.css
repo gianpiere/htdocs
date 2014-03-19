@@ -11,7 +11,7 @@
 	max-width: 960px;
 	overflow: auto;
 	margin: 0 auto;
-	background: silver;
+	background: #579aca;
 }
 
 .optionfocushome{min-height: 340px;}
@@ -142,6 +142,7 @@ footer #sectionfooter{
 	text-align: center;
 	background: gold;
 	border-right: 5px solid green;
+	margin-top: 2px;
 }
 
 /* laterales rasgados */
@@ -175,4 +176,36 @@ footer #sectionfooter{
 	color: violet;
 	display: block;
 	text-align: right;
+}
+
+.icn_mas{
+	background: url(http://localhost/statics/img/icons/icn_mas.png) right center no-repeat;
+}
+
+.msgtop{
+	min-height: 10px;
+	display: block;
+	width: 100%;
+}
+
+.img_responsive{
+	max-width: 100%;
+	height: auto;
+}
+
+
+/** slider **/
+
+.sliderpanel{
+	background: orange;
+	position: relative;
+}
+
+.sliderpanel .controls{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 1;
 }

@@ -1,17 +1,17 @@
 <div class="inicialheader">
 	<div class="content socialplugins">
 		<a href="#"><button class="lnkfacebook"></button></a>
+		<div class="useraccess">
+			<button id="ingresar" type="button"><?= lang('Global.ingreso'); ?></button>
+		</div>
 	</div>
+
 </div>
 <section id="wrap">
 	<div class="rasgadoL"></div>
 	<div class="responsive allcontent">
 		<section class="msgtop">
-			<div class="socialplugins">
-				<div class="useraccess">
-						<button id="ingresar" type="button"><?= lang('Global.ingreso'); ?></button>
-				</div>
-			</div>
+			
 		</section>
 		
 		<section class="panel access">
@@ -33,7 +33,7 @@
 				<a href="#1">Cursos</a>
 				<a href="#1">Fotos</a>
 				<a href="#1">Contactenos</a>
-				<a href="#1">Mas</a>
+				<a href="#1" class="icn_mas">Mas</a>
 			</nav>
 		</section>
 		
@@ -41,16 +41,21 @@
 			<img src="<?=IMG;?>bannerPrincipal/banner.jpg" height="auto" width="auto" />
 		</section>
 
+		<div class="separacion_1">
+			
+		</div>
+
+		<section class="sliderpanel panel">
+			<div class="controls"></div>
+			<div> <img src="<?=SLIDER;?>slider_1.png" width="100%" height="auto" class="img_responsive"> </div>
+		</section>
 
 		<section class="optionfocushome colorfocuspanel">
 			<!-- Cursos -->
-
+			aaa
 			<!-- Cursos -->
 		</section>
 
-		<section class="">
-			
-		</section>
 	</div>
 	<div class="rasgadoR"></div>
 	<script type="text/javascript">
