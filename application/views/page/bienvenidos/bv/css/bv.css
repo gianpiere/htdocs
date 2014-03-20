@@ -150,14 +150,14 @@ footer #sectionfooter{
 	float: left;
 	width: 20px;
 	background: url(http://localhost/statics/img/fondo/roto_l.png);
-	height: 1500px;
+	height: 981px;
 }
 
 .rasgadoR{
 	float: left;
 	width: 20px;
 	background: url(http://localhost/statics/img/fondo/roto_r.png);
-	height: 1500px;
+	height: 981px;
 }
 
 .allcontent{
@@ -208,4 +208,50 @@ footer #sectionfooter{
 	right: 0px;
 	bottom: 0px;
 	z-index: 1;
+}
+.Texto{
+	display: block;	position: relative;
+}
+
+.sld_action{
+	height: 40px;
+	min-width: 70px;
+	background: green;
+	padding: 0px 25px 0px 25px;
+	position: absolute;
+	bottom: 20px;
+	right: 15px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+}
+a{text-decoration: none; color: inherit;}
+
+.slideposition{
+	width: 500px;
+	height: 4px;
+	position: absolute;
+	bottom: 18px;
+	left: 10px;
+}
+
+.slideposition i{
+	min-width: 10px;
+	min-height: 4px;
+	float: left;
+	margin-right: 7px;
+	cursor: pointer;
+}
+
+.slideposition i:hover{
+	height: 8px;
+}
+
+.slideposition i.nofocus{
+	background: gold;
+}
+
+.slideposition i.onfocus{
+	background: orange;
+	width: 20px;
 }
