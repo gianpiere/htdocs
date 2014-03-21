@@ -44,7 +44,13 @@ $route['404_override'] = '';
 * @date 	: 
 * @todo 	: Pagina Principal de aterrisaje de un usuario.
 **************************************************************************/
-$route['Home'] = 'Bienvenida/inicio';
+$route['Home'] 			= 'Bienvenida/inicio';
+$route['Nosotros'] 		= 'Nosotros/inicio';
+$route['Actividades'] 	= 'Actividades/inicio';
+$route['Cursos'] 		= 'Cursos/inicio';
+$route['Fotos'] 		= 'Fotos/inicio';
+$route['Contactenos'] 	= 'Contactenos/inicio';
+$route['Mas'] 			= 'Mas/inicio';
 
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::GRB://
 

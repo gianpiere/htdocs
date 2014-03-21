@@ -3,12 +3,12 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-03-2014 a las 13:41:27
+-- Tiempo de generación: 21-03-2014 a las 07:19:14
 -- Versión del servidor: 5.5.32
 -- Versión de PHP: 5.4.19
 
 --
--- estructura final : jGianpiere
+-- ; Developer :: jGianpiere
 --
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -132,6 +132,48 @@ BEGIN
 	WHERE
 	vcrs.CursoProfesorId = xProfesorId;
 
+END$$
+
+DROP PROCEDURE IF EXISTS `SP_dvDevocionalMostrarUltimo`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_dvDevocionalMostrarUltimo`()
+BEGIN
+	/**
+	*	@Name 	: SP_dvDevocionalMostrarUltimo
+	*	@Params	: --
+	*/
+	DECLARE xDia BIT DEFAULT (SELECT count(dv.idDevocional) FROM devocional AS dv WHERE dv.Devocional_estado = 1 AND DATE_FORMAT(dv.Devocional_fechaPresentacion,'%Y-%m-%d') = DATE_FORMAT(CURRENT_DATE,'%Y-%m-%d') LIMIT 1);
+	DECLARE xDiaqSigue BIT DEFAULT (SELECT count(dv.idDevocional) FROM devocional AS dv WHERE dv.Devocional_estado = 1 AND DATE_FORMAT(dv.Devocional_fechaPresentacion,'%Y-%m-%d') > DATE_FORMAT(CURRENT_DATE,'%Y-%m-%d') ORDER BY dv.Devocional_fechaPresentacion ASC LIMIT 1);
+
+	IF xDia = 1 THEN
+		SELECT 
+			dv.Devocional_Contenido, 
+			dv.Devocional_DetalleBiblico, 
+			dv.Devocional_estado, 
+			dv.Devocional_fechaPresentacion 
+		FROM devocional AS dv 
+		WHERE dv.Devocional_estado = 1 
+		AND DATE_FORMAT(dv.Devocional_fechaPresentacion,'%Y-%m-%d') = DATE_FORMAT(CURRENT_DATE,'%Y-%m-%d') LIMIT 1;
+	ELSEIF xDiaqSigue = 1 THEN 
+		SELECT 
+			dv.Devocional_Contenido, 
+			dv.Devocional_DetalleBiblico, 
+			dv.Devocional_estado, 
+			dv.Devocional_fechaPresentacion 
+		FROM devocional AS dv 
+		WHERE dv.Devocional_estado = 1 
+		AND DATE_FORMAT(dv.Devocional_fechaPresentacion,'%Y-%m-%d') > DATE_FORMAT(CURRENT_DATE,'%Y-%m-%d') 
+		ORDER BY dv.Devocional_fechaPresentacion ASC LIMIT 1;
+	ELSE
+		SELECT 
+			dv.Devocional_Contenido, 
+			dv.Devocional_DetalleBiblico, 
+			dv.Devocional_estado, 
+			dv.Devocional_fechaPresentacion 
+		FROM devocional AS dv 
+		WHERE dv.Devocional_estado = 1 
+		ORDER BY dv.Devocional_fechaPresentacion DESC LIMIT 1;
+	END IF;
+	
 END$$
 
 DROP PROCEDURE IF EXISTS `SP_usBuscarUsuario`$$
@@ -392,8 +434,6 @@ DELIMITER ;
 --
 -- Estructura de tabla para la tabla `actividades`
 --
--- Creación: 21-02-2014 a las 01:57:51
---
 
 DROP TABLE IF EXISTS `actividades`;
 CREATE TABLE IF NOT EXISTS `actividades` (
@@ -410,8 +450,6 @@ CREATE TABLE IF NOT EXISTS `actividades` (
 
 --
 -- Estructura de tabla para la tabla `administradores`
---
--- Creación: 21-02-2014 a las 01:57:51
 --
 
 DROP TABLE IF EXISTS `administradores`;
@@ -437,8 +475,6 @@ INSERT INTO `administradores` (`idAdministradores`, `Administradores_Nombres`, `
 --
 -- Estructura de tabla para la tabla `asistencia`
 --
--- Creación: 21-02-2014 a las 01:57:51
---
 
 DROP TABLE IF EXISTS `asistencia`;
 CREATE TABLE IF NOT EXISTS `asistencia` (
@@ -455,16 +491,6 @@ CREATE TABLE IF NOT EXISTS `asistencia` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- RELACIONES PARA LA TABLA `asistencia`:
---   `idcursosxusuario`
---       `cursosxusuario` -> `idcursosxusuario`
---   `idfolder`
---       `folder` -> `idfolder`
---   `idSupervisor`
---       `profesor` -> `idProfesor`
---
-
---
 -- Volcado de datos para la tabla `asistencia`
 --
 
@@ -475,8 +501,6 @@ INSERT INTO `asistencia` (`idAsistencia`, `Asistencia_fecha`, `idfolder`, `idSup
 
 --
 -- Estructura de tabla para la tabla `asistenciasupervisada`
---
--- Creación: 21-02-2014 a las 01:57:51
 --
 
 DROP TABLE IF EXISTS `asistenciasupervisada`;
@@ -491,20 +515,10 @@ CREATE TABLE IF NOT EXISTS `asistenciasupervisada` (
   KEY `fkAsistenciaSupervisada_Colaboradores1_idx` (`idColaboradores`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- RELACIONES PARA LA TABLA `asistenciasupervisada`:
---   `idColaboradores`
---       `colaboradores` -> `idColaboradores`
---   `idProfesor`
---       `profesor` -> `idProfesor`
---
-
 -- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `aula`
---
--- Creación: 21-02-2014 a las 01:57:51
 --
 
 DROP TABLE IF EXISTS `aula`;
@@ -530,8 +544,6 @@ INSERT INTO `aula` (`idAula`, `Aula_Nombre`, `Aula_Codigo`, `Aula_Estado`, `Aula
 --
 -- Estructura de tabla para la tabla `colaboradores`
 --
--- Creación: 21-02-2014 a las 01:57:51
---
 
 DROP TABLE IF EXISTS `colaboradores`;
 CREATE TABLE IF NOT EXISTS `colaboradores` (
@@ -543,18 +555,10 @@ CREATE TABLE IF NOT EXISTS `colaboradores` (
   KEY `fkSupervisores_Administradores1_idx` (`idAdministradores`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- RELACIONES PARA LA TABLA `colaboradores`:
---   `idAdministradores`
---       `administradores` -> `idAdministradores`
---
-
 -- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `curso`
---
--- Creación: 21-02-2014 a las 01:57:50
 --
 
 DROP TABLE IF EXISTS `curso`;
@@ -572,14 +576,6 @@ CREATE TABLE IF NOT EXISTS `curso` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
--- RELACIONES PARA LA TABLA `curso`:
---   `idnivel`
---       `nivel` -> `idnivel`
---   `idProfesor`
---       `profesor` -> `idProfesor`
---
-
---
 -- Volcado de datos para la tabla `curso`
 --
 
@@ -590,8 +586,6 @@ INSERT INTO `curso` (`idCurso`, `Curso_Nombre`, `Curso_estado`, `Curso_fechaCrea
 
 --
 -- Estructura de tabla para la tabla `cursosxprofesor`
---
--- Creación: 21-02-2014 a las 01:57:51
 --
 
 DROP TABLE IF EXISTS `cursosxprofesor`;
@@ -607,20 +601,10 @@ CREATE TABLE IF NOT EXISTS `cursosxprofesor` (
   KEY `fkCursosxProfesor_Curso1_idx` (`idCurso`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- RELACIONES PARA LA TABLA `cursosxprofesor`:
---   `idCurso`
---       `curso` -> `idCurso`
---   `idProfesor`
---       `profesor` -> `idProfesor`
---
-
 -- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `cursosxusuario`
---
--- Creación: 21-02-2014 a las 01:57:51
 --
 
 DROP TABLE IF EXISTS `cursosxusuario`;
@@ -639,14 +623,6 @@ CREATE TABLE IF NOT EXISTS `cursosxusuario` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- RELACIONES PARA LA TABLA `cursosxusuario`:
---   `idfolder`
---       `folder` -> `idfolder`
---   `idUsuario`
---       `usuario` -> `idUsuario`
---
-
---
 -- Volcado de datos para la tabla `cursosxusuario`
 --
 
@@ -658,8 +634,6 @@ INSERT INTO `cursosxusuario` (`idcursosxusuario`, `cursosxusuario_estado`, `curs
 --
 -- Estructura de tabla para la tabla `devocional`
 --
--- Creación: 21-02-2014 a las 01:57:51
---
 
 DROP TABLE IF EXISTS `devocional`;
 CREATE TABLE IF NOT EXISTS `devocional` (
@@ -670,14 +644,19 @@ CREATE TABLE IF NOT EXISTS `devocional` (
   `Devocional_DetalleBiblico` varchar(200) DEFAULT NULL,
   `Devocional_estado` bit(1) DEFAULT b'1',
   PRIMARY KEY (`idDevocional`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Volcado de datos para la tabla `devocional`
+--
+
+INSERT INTO `devocional` (`idDevocional`, `Devocional_fechaCreacion`, `Devocional_fechaPresentacion`, `Devocional_Contenido`, `Devocional_DetalleBiblico`, `Devocional_estado`) VALUES
+(1, '2014-03-19 00:00:00', '2014-03-21 00:00:00', 'este es un ejemplo del contenido biblico que se debe mostrar en la web', '1 Juan 2:3,8', b'1');
 
 -- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `folder`
---
--- Creación: 21-02-2014 a las 01:57:51
 --
 
 DROP TABLE IF EXISTS `folder`;
@@ -696,16 +675,6 @@ CREATE TABLE IF NOT EXISTS `folder` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- RELACIONES PARA LA TABLA `folder`:
---   `idAula`
---       `aula` -> `idAula`
---   `idCurso`
---       `curso` -> `idCurso`
---   `idhorarios`
---       `horarios` -> `idhorarios`
---
-
---
 -- Volcado de datos para la tabla `folder`
 --
 
@@ -716,8 +685,6 @@ INSERT INTO `folder` (`idfolder`, `folder_estado`, `folder_descripcion`, `folder
 
 --
 -- Estructura de tabla para la tabla `galeriadefotos`
---
--- Creación: 21-02-2014 a las 01:57:51
 --
 
 DROP TABLE IF EXISTS `galeriadefotos`;
@@ -733,8 +700,6 @@ CREATE TABLE IF NOT EXISTS `galeriadefotos` (
 
 --
 -- Estructura de tabla para la tabla `horarios`
---
--- Creación: 21-02-2014 a las 01:57:51
 --
 
 DROP TABLE IF EXISTS `horarios`;
@@ -760,8 +725,6 @@ INSERT INTO `horarios` (`idhorarios`, `horarios_fechaCreacion`, `horarios_fechaI
 --
 -- Estructura de tabla para la tabla `nivel`
 --
--- Creación: 21-02-2014 a las 01:57:51
---
 
 DROP TABLE IF EXISTS `nivel`;
 CREATE TABLE IF NOT EXISTS `nivel` (
@@ -784,8 +747,6 @@ INSERT INTO `nivel` (`idnivel`, `nivel_estado`, `nivel_nombre`, `nivel_numero`) 
 
 --
 -- Estructura de tabla para la tabla `profesor`
---
--- Creación: 21-02-2014 a las 01:57:51
 --
 
 DROP TABLE IF EXISTS `profesor`;
@@ -812,8 +773,6 @@ INSERT INTO `profesor` (`idProfesor`, `Profesor_Nombres`, `Profesor_estado`, `Pr
 --
 -- Estructura de tabla para la tabla `slidertransicion`
 --
--- Creación: 21-02-2014 a las 01:57:52
---
 
 DROP TABLE IF EXISTS `slidertransicion`;
 CREATE TABLE IF NOT EXISTS `slidertransicion` (
@@ -834,8 +793,6 @@ CREATE TABLE IF NOT EXISTS `slidertransicion` (
 
 --
 -- Estructura de tabla para la tabla `supervisor`
---
--- Creación: 21-02-2014 a las 01:57:51
 --
 
 DROP TABLE IF EXISTS `supervisor`;
@@ -864,8 +821,6 @@ INSERT INTO `supervisor` (`idSupervisor`, `Supervisor_Nombres`, `Supervisor_codi
 --
 -- Estructura de tabla para la tabla `timestamps`
 --
--- Creación: 21-02-2014 a las 01:57:52
---
 
 DROP TABLE IF EXISTS `timestamps`;
 CREATE TABLE IF NOT EXISTS `timestamps` (
@@ -877,8 +832,6 @@ CREATE TABLE IF NOT EXISTS `timestamps` (
 
 --
 -- Estructura de tabla para la tabla `usuario`
---
--- Creación: 21-02-2014 a las 01:57:51
 --
 
 DROP TABLE IF EXISTS `usuario`;
@@ -898,12 +851,6 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
--- RELACIONES PARA LA TABLA `usuario`:
---   `idusuariodatos`
---       `usuariodatos` -> `idusuariodatos`
---
-
---
 -- Volcado de datos para la tabla `usuario`
 --
 
@@ -916,8 +863,6 @@ INSERT INTO `usuario` (`idUsuario`, `Usuario_Nombres`, `idusuariodatos`, `Usuari
 
 --
 -- Estructura de tabla para la tabla `usuariodatos`
---
--- Creación: 21-02-2014 a las 01:57:51
 --
 
 DROP TABLE IF EXISTS `usuariodatos`;
@@ -932,12 +877,6 @@ CREATE TABLE IF NOT EXISTS `usuariodatos` (
   PRIMARY KEY (`idusuariodatos`),
   KEY `fkusuariodatos_Supervisor1_idx` (`idSupervisor`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
-
---
--- RELACIONES PARA LA TABLA `usuariodatos`:
---   `idSupervisor`
---       `supervisor` -> `idSupervisor`
---
 
 --
 -- Volcado de datos para la tabla `usuariodatos`

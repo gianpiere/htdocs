@@ -2,7 +2,7 @@
 
 /** 
 **************************************************************************
-* @todo     : Home Page
+* @todo     : Nosotros Page
 * @author   : Gianpiere Ramo Bernuy. 
 * @return   : view : 
 * @see      : ABJ WEB
@@ -10,7 +10,7 @@
 * @copyright: Academia Biblica Juvenil
 **************************************************************************
 */ # --------------------------------------------------------------------- 
-class Bienvenida extends MY_Controller{
+class Nosotros extends MY_Controller{
     public function __construct(){
         parent::__construct();
         $this->load->library('form_validation');
@@ -22,7 +22,7 @@ class Bienvenida extends MY_Controller{
     * @link     : FormularioInicio 
     * @author   : Gianpiere Julio Ramos Bernuy.
     * @since    : Version 1.0
-    * @copyright: Academia Biblica Juvenil
+    * @copyright: Grupo Silvestre (c) 2013, S.A.
     * @license  : http://10.10.1.8:8087/
     *
     * ========================================================================
@@ -30,8 +30,8 @@ class Bienvenida extends MY_Controller{
     * ========================================================================
     */
     public function inicio(){
-        $this->css = array('bv.css');
-        $this->js  = array('bv.js');
+        $this->css = array('ns.css');
+        $this->js  = array('ns.js');
 
         $this->load->model('m_devocional');
 
@@ -44,7 +44,7 @@ class Bienvenida extends MY_Controller{
             );
         endif;
 
-        $this->Theme('page/bienvenidos/bv/','bv.php');
+        $this->Theme('page/nosotros/ns/','ns.php');
     }
 
 

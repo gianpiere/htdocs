@@ -10,7 +10,7 @@
 * @copyright: Academia Biblica Juvenil
 **************************************************************************
 */ # --------------------------------------------------------------------- 
-class Bienvenida extends MY_Controller{
+class Contactenos extends MY_Controller{
     public function __construct(){
         parent::__construct();
         $this->load->library('form_validation');
@@ -30,8 +30,8 @@ class Bienvenida extends MY_Controller{
     * ========================================================================
     */
     public function inicio(){
-        $this->css = array('bv.css');
-        $this->js  = array('bv.js');
+        $this->css = array('ct.css');
+        $this->js  = array('ct.js');
 
         $this->load->model('m_devocional');
 
@@ -44,7 +44,7 @@ class Bienvenida extends MY_Controller{
             );
         endif;
 
-        $this->Theme('page/bienvenidos/bv/','bv.php');
+        $this->Theme('page/contactenos/ct/','ct.php');
     }
 
 

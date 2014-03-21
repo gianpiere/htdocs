@@ -26,12 +26,12 @@
 				<div class="rutabiblica" align="right"><span><?=(isset($this->devocional) && !empty($this->devocional)) ? $this->devocional['rutabiblica'] : ''?></span></div>
 			</div>
 			<nav class="menuhome">
-				<a href="Home" class="lnkfocus" ><?= lang('Global.Home'); ?></a>
+				<a href="Home"><?= lang('Global.Home'); ?></a>
 				<a href="Nosotros"><?= lang('Global.Us'); ?></a>
 				<a href="Actividades"><?= lang('Global.Activities'); ?></a>
 				<a href="Cursos"><?= lang('Global.Courses'); ?></a>
 				<a href="Fotos"><?= lang('Global.Photos'); ?></a>
-				<a href="Contactenos"><?= lang('Global.Contact'); ?></a>
+				<a href="Contactenos" class="lnkfocus"><?= lang('Global.Contact'); ?></a>
 				<a href="Mas" class="icn_mas"><?= lang('Global.Mas'); ?></a>
 			</nav>
 		</section>
@@ -70,7 +70,7 @@
 
 		<section class="optionfocushome colorfocuspanel">
 			<!-- Cursos -->
-
+			aaa
 			<!-- Cursos -->
 		</section>
 

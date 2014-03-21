@@ -50,10 +50,10 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['port']	   = '3306';
-$db['default']['username'] = 'silvestre';
-$db['default']['password'] = '7BCs7xCr1sT0';
-$db['default']['database'] = 'dbsilvestre';
+$db['default']['port']	   = '';
+$db['default']['username'] = 'abjuser';
+$db['default']['password'] = '7bcs7xCr1sT0';
+$db['default']['database'] = 'wwabj_clase';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

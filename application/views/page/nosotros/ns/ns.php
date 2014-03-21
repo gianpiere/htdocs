@@ -26,8 +26,8 @@
 				<div class="rutabiblica" align="right"><span><?=(isset($this->devocional) && !empty($this->devocional)) ? $this->devocional['rutabiblica'] : ''?></span></div>
 			</div>
 			<nav class="menuhome">
-				<a href="Home" class="lnkfocus" ><?= lang('Global.Home'); ?></a>
-				<a href="Nosotros"><?= lang('Global.Us'); ?></a>
+				<a href="Home" ><?= lang('Global.Home'); ?></a>
+				<a href="Nosotros" class="lnkfocus"><?= lang('Global.Us'); ?></a>
 				<a href="Actividades"><?= lang('Global.Activities'); ?></a>
 				<a href="Cursos"><?= lang('Global.Courses'); ?></a>
 				<a href="Fotos"><?= lang('Global.Photos'); ?></a>
@@ -70,7 +70,7 @@
 
 		<section class="optionfocushome colorfocuspanel">
 			<!-- Cursos -->
-
+			aaa
 			<!-- Cursos -->
 		</section>
 
