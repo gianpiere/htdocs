@@ -40,6 +40,7 @@ body{ /*background: white;*/ }
 
 .allcontent{
 	max-width: 960px;
+	/*min-width: 960px;*/
 	overflow: auto;
 	display: inline-block;
 	margin: 0 auto;
@@ -56,6 +57,7 @@ section.content{
 
 #wrap{
 	max-width: 1000px;
+	min-width: 1000px;
 	margin: 0px auto 0px auto;
 	overflow: auto;
 }
