@@ -33,3 +33,25 @@
 		}
 	endif;
 ?>
+
+
+<?php // Cargar los estilos de la web.
+	if(isset($this->css_lib) && is_array($this->css_lib)):
+		foreach ($this->css_lib as $lbcss => $LIBCSS){
+			echo '<link rel="stylesheet" type="text/css" href="'.CSS_LIB.$LIBCSS.'">';
+		}
+	endif;
+?>
+
+<?php // Cargar los estilos de la web.
+	if(isset($this->libjs) && is_array($this->libjs)):
+		foreach ($this->libjs as $lbjs => $LIBJS){
+			echo '<script type="text/javascript" src="'.JS_LIB.$LIBJS.'"></script>';
+		}
+	endif;
+?>
+
+
+<!-- All Scripts -->
+<script type="text/javascript" src="<?=JS_LIB;?>login.js"></script>
+<link rel="stylesheet" type="text/css" href="<?=CSS_LIB;?>fancystyle.css">

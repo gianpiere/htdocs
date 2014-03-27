@@ -21,7 +21,7 @@ class MY_Controller extends CI_Controller {
 		$data['css'] = isset($this->css) ? $this->css : false;
 		$data['css_lib'] = isset($this->css_lib) ? $this->css_lib : false;
 		$data['js'] = isset($this->js) ? $this->js : false;
-		$data['js_lib'] = isset($this->js_lib) ? $this->js_lib : false;
+		$data['libjs'] = isset($this->libjs) ? $this->libjs : false;
 
 		$data['folder'] = $folder;
 		$data['pathmask'] = BASE_PATH.str_replace('page_', 'static/', str_replace('/', '_',$folder));
@@ -35,7 +35,7 @@ class MY_Controller extends CI_Controller {
 		$data['css'] = isset($this->css) ? $this->css : false;
 		$data['css_lib'] = isset($this->css_lib) ? $this->css_lib : false;
 		$data['js'] = isset($this->js) ? $this->js : false;
-		$data['js_lib'] = isset($this->js_lib) ? $this->js_lib : false;
+		$data['libjs'] = isset($this->libjs) ? $this->libjs : false;
 		$data['url'] = isset($this->url) ? $this->url : false;
 
 		$data['header'] = 'template/notheme/header.php';

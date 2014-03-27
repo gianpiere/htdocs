@@ -167,14 +167,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "abjweb/application/config/config.php",
-			"settings":
-			{
-				"buffer_size": 13043,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/User/mysqlexecutesis.sublime-build",
 	"command_palette":
@@ -378,6 +370,7 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/abjweb/application/config/config.php",
 		"/C/xampp/htdocs/.htaccess",
 		"/C/xampp/htdocs/abjweb/.htaccess",
 		"/C/xampp/htdocs/application/views/page/bienvenidos/bv/css/bv.css",
@@ -504,8 +497,7 @@
 		"/C/Users/gianpiere.ramos/Documents/Sublime Text Build 3059 x64/Data/Packages/User/OpenBrowserStartFiles.sublime-settings",
 		"/C/Users/gianpiere.ramos/Documents/GitHub/ApiSublimeTextPlugins/OpenBrowser/OpenBrowserStartFiles.sublime-settings",
 		"/C/Users/gianpiere.ramos/Documents/Sublime Text Build 3059 x64/Data/Packages/User/Preferences.sublime-settings",
-		"/Z/application/views/page/logo.php",
-		"/C/Users/gianpiere.ramos/Desktop/STx64 GRB/Data/Packages/User/mysqlexecutesis.sublime-build"
+		"/Z/application/views/page/logo.php"
 	],
 	"find":
 	{
@@ -699,37 +691,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "abjweb/application/config/config.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 13043,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								502,
-								502
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
